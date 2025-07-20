@@ -77,30 +77,15 @@ similarity_scores = util.semantic_search(job_vectors, course_vectors)
 
 ## 📝 Contoh Hasil Rekomendasi
 
-Input: **"Machine Learning Engineer"**
+Input: **"Machine Learning"**
 
 ```
-🎯 Rekomendasi Course untuk: Machine Learning Engineer
-
-1. Machine Learning Specialization (Similarity: 0.89)
-   - Provider: Coursera
-   - Kategori: Data Science
-
-2. Deep Learning Fundamentals (Similarity: 0.84)
-   - Provider: Coursera  
-   - Kategori: Artificial Intelligence
-
-3. Applied Data Science with Python (Similarity: 0.78)
-   - Provider: Coursera
-   - Kategori: Programming
-
-4. Introduction to Neural Networks (Similarity: 0.75)
-   - Provider: Coursera
-   - Kategori: Machine Learning
-
-5. Statistics for Data Science (Similarity: 0.72)
-   - Provider: Coursera
-   - Kategori: Mathematics
+Recommended courses for Machine Learning:
+1. Data Science
+2. IBM Data Science
+3. Practical Data Science with MATLAB
+4. Six Sigma Green Belt
+5. Analytics for Decision Making
 ```
 
 ---
@@ -108,7 +93,7 @@ Input: **"Machine Learning Engineer"**
 ## 📈 Evaluasi Model
 
 ### ✅ **Kelebihan:**
-- Rekomendasi cukup akurat untuk job title yang umum (Data Scientist, Software Engineer, dll)
+- Rekomendasi cukup akurat untuk job title machine learning
 - Sistem berjalan cepat dan responsif
 - Model SBERT memberikan understanding semantik yang baik
 
@@ -118,11 +103,8 @@ Input: **"Machine Learning Engineer"**
 3. **Deskripsi course kurang detail** - Beberapa course memiliki deskripsi terlalu singkat sehingga similarity kurang optimal
 
 ### 🚀 **Saran Perbaikan:**
-- **Ekspansi data**: Scraping lebih banyak platform course (Udemy, edX, LinkedIn Learning)
+- **Ekspansi data**: Scraping lebih banyak platform course (Udemy, edX, revou)
 - **Enrichment deskripsi**: Menambah informasi detail tentang course (syllabus, prerequisites)
-- **Filter tambahan**: Implementasi filter berdasarkan level, durasi, dan rating
-- **Feedback system**: Menambah mekanisme user rating untuk memperbaiki rekomendasi
-
 ---
 
 ## 🛠️ Tech Stack
